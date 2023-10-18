@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.result{
+  display: flexbox;
+  text-align: start;
+}
+
+.result > p{
+  padding: 2px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
