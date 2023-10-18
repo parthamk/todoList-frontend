@@ -6,14 +6,14 @@ function App() {
   const [input, setInput] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/tasks')
+    fetch('https://todolist-backend-zz6h.onrender.com/tasks')
       .then(res => res.json())
       .then(data => setTasks(data))
       .catch(err => console.log(err));
   }, []);
 
   const addTask = () => {
-    fetch('http://localhost:5000/tasks', {
+    fetch('https://todolist-backend-zz6h.onrender.com/tasks', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ task: input })
